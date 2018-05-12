@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:300,900");
+
+$accent: #2d74b5;
+
+html {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12.5px;
+}
+
+body {
+    max-width: 8.5in;
+    max-height: 11in;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media print {
+    body {
+        size: 8.5in 11in;
+        margin: 0.5in 0.5in 0.5in 0.5in;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+//  #coursework {
+//      display: none;
+//  }
+}
+
+h1, h2 {
+    border-bottom: 1px solid $accent;
+    color: $accent;
+}
+
+h1, h2, h3, h4, h5, h6, {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.project-link {
+    font-style: italic;
+}
