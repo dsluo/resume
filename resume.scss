@@ -8,13 +8,13 @@ html {
 }
 
 body {
-    max-width: 8.5in;
-    max-height: 11in;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .container {
-    margin-right: auto;
-    margin-left: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 @media print {
