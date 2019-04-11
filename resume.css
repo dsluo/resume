@@ -28,11 +28,12 @@ h2 {
 a {
     color: inherit;
     text-decoration-color: #00000040;
+    text-decoration-style: underline;
 }
 
 @media print {
     a {
-        text-decoration: none;
+        text-decoration-style: none;
     }
 }
 
