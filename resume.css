@@ -2,12 +2,7 @@
     --page-width: 8.5in;
     --page-height: 11in;
     --page-margin: 0.25in;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 12pt;
-    margin: var(--page-margin);
+    --content-width: calc(var(--page-width) - 2 * var(--page-margin))
 }
 
 h1,
@@ -53,31 +48,60 @@ i[class^="fa"] {
     margin-right: 0.2em;
 }
 
-.container {
-    margin-left: auto;
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 12pt;
+}
+
+.center-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: calc(var(--page-height) * -1/2);
+    margin-left: calc(var(--page-width) * -1/2);
+}
+
+.page {
+    margin: 2em auto 2em auto;
+/*     margin-left: auto;
     margin-right: auto;
-    max-width: calc(var(--page-width) - 2 * var(--page-margin));
-    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em; */
+    width: var(--page-width);
+    height: var(--page-height);
     display: grid;
     grid-template-columns: 67% 33%;
     grid-template-rows: auto;
-    grid-gap: 1em;
-    grid-template-areas: 
-        "header header"
-        "left right"
-        "footer footer";
+    grid-template-areas: "header header""left right""footer footer";
 }
 
-@media (max-width: 500px) {
+.page>* {
+    margin: 0.5em;
+}
+
+.card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: var(--page-margin);
+}
+
+@media (max-width: 8.5in) {
     body {
-        margin: 0;
+        margin: 1em;
     }
-    .container {
-        grid-template-areas: 
-            "header header"
-            "left left"
-            "right right"
-            "footer footer";
+
+    .page {
+        grid-template-columns: auto;
+        grid-template-areas: "header""left""right""footer";
+    }
+
+    .info-tag {
+        /*         justify-content: flex-start; */
+        flex-basis: 33.3333%;
+    }
+
+    .card {
+        box-shadow: unset;
+        padding: unset;
     }
 }
 
@@ -105,10 +129,11 @@ footer {
 
 .info-tag {
     display: inline-block;
+    flex-basis: content;
 }
 
 .badge {
-    border: 1px dashed #7c7c7c;
+    border: 1px dashed #7c7c7c7c;
     border-radius: 5px;
     padding: 2px;
     display: inline-block;
