@@ -66,8 +66,8 @@ body {
 
 .page {
     margin: 2em auto 2em auto;
-    width: var(--page-width);
-    height: var(--page-height);
+    max-width: var(--page-width);
+    min-height: var(--page-height);
     display: grid;
     grid-template-columns: 67% 33%;
     grid-template-rows: min-content min-content auto;
