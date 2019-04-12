@@ -61,6 +61,11 @@ a:hover {
     margin-bottom: 4px;
 }
 
+.project > a {
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
 /* contact layout */
 
 #contact-info {
