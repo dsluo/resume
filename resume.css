@@ -208,7 +208,7 @@ footer {
 
 @media print {
     a {
-        text-decoration-style: none;
+        text-decoration: none;
     }
 
     .card {
