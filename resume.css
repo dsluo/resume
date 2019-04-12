@@ -21,7 +21,7 @@ h6,
 p,
 ul {
     margin-top: 0;
-    margin-bottom: 0.33em;
+    margin-bottom: 0.25em;
 }
 
 h1 {
@@ -63,7 +63,7 @@ a:hover {
 
 .project > a {
     display: inline-block;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.25em;
 }
 
 /* contact layout */
