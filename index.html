@@ -3,14 +3,14 @@
 
 <head>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-
+    
     <title>David Luo's Resume</title>
-
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="resume.css">
-
+    
     <link rel="shortcut icon" type="image/png" href="pfp.png">
 </head>
 
@@ -19,74 +19,86 @@
         <header>
             <h1>David Luo</h1>
             <div id="contact-info">
-                <span class="info-tag">
+                <span id="mail" class="nobreak">
                     <i class="fas fa-envelope"></i>
                     <a href="mailto:mail@dsluo.me">mail@dsluo.me</a>
                 </span>
-                <span class="info-tag">
+                <span id="phone" class="nobreak">
                     <i class="fas fa-phone fa-rotate-90"></i>
                     678-250-8011
-
                 </span>
-                <span class="info-tag">
+                <span id="location" class="nobreak">
                     <i class="fas fa-map-marker-alt"></i>
                     Athens, GA
-
                 </span>
-                <span class="info-tag">
+                <span id="website" class="nobreak">
                     <i class="fas fa-globe-americas"></i>
                     <a href="https://dsluo.me">https://dsluo.me</a>
                 </span>
-                <span class="info-tag">
+                <span id="linkedin" class="nobreak">
                     <i class="fab fa-linkedin"></i>
                     <a href="https://linkedin.com/in/dsluo">linkedin://dsluo</a>
                 </span>
-                <span class="info-tag">
+                <span id="github" class="nobreak">
                     <i class="fab fa-github"></i>
                     <a href="http://github.com/dsluo">github://dsluo</a>
                 </span>
             </div>
         </header>
+        <section id="academics">
+            <h2>Academics</h2>
+            
+            <h3>B.S. in Computer Science</h3>
+            <h4>University of Georgia</h4>
+            <p>
+                Graduating Fall 2019<br />
+                <span class="nobreak">GPA: 3.75/4.0&mdash;Dean's List</span><br />
+                Zell Miller Scholarship Recipient
+            </p>
+        </section>
         <div class="left">
             <section id="experience">
                 <h2>Work Experience</h2>
-
+                
                 <div class="experience-entry">
                     <h3>Software Development Intern</h3>
                     <h4>Data Automation</h4>
-                    <div class="job-info">
-                        <span>
-                            <i class="fas fa-map-marker-alt"></i>
-                            Athens, GA
-                        </span>
-                        <span>
+                    <div id="job-info">
+                        <span class="nobreak">
                             <i class="far fa-calendar-alt"></i>
                             Summer 2018&mdash;Present
                         </span>
+                        <span class="nobreak">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Athens, GA
+                        </span>
                     </div>
-                    <p>Executed two phases of a scheduling web app for kitchen exhaust cleaning company using Django
+                    <p>
+                        Executed two phases of a scheduling web app for kitchen exhaust cleaning company using Django
                         and PostgreSQL. Allows dispatchers to easily plan out entire week of jobs for contractors.
                     </p>
-                    <p>Designed and implemented a user configurable system which allowed client to periodically pull
+                    <p>
+                        Designed and implemented a user configurable system which allowed client to periodically pull
                         spreadsheet attachments from their inbox, apply spreadsheet operations, and upload to the
                         client’s analytics software.
                     </p>
                 </div>
-
+                
                 <div class="experience-entry">
                     <h3>Software Development Intern</h3>
                     <h4>Hunter Liberty Corporation</h4>
-                    <div class="job-info">
-                        <span>
+                    <div id="job-info">
+                        <span class="nobreak">
                             <i class="far fa-calendar-alt"></i>
                             Summer 2018
                         </span>
-                        <span>
+                        <span class="nobreak">
                             <i class="fas fa-map-marker-alt"></i>
                             Acworth, GA
                         </span>
                     </div>
-                    <p>Developed an Android app that communicates with refrigeration controllers over a mobile
+                    <p>
+                        Developed an Android app that communicates with refrigeration controllers over a mobile
                         device’s
                         USB port using a USB-to-serial controller with the Modbus-ASCII serial protocol.
                     </p>
@@ -94,7 +106,7 @@
             </section>
             <section id="projects">
                 <h2>Projects</h2>
-
+                
                 <div class="align">
                     <h3>SoundBert</h3>
                     <a href="https://github.com/dsluo/SoundBert">https://github.com/dsluo/SoundBert</a>
@@ -109,7 +121,7 @@
                         PostgreSQL database to store metadata about each sound.
                     </li>
                 </ul>
-
+                
                 <div class="align">
                     <h3>Bulletin Scraper</h3>
                     <a href="https://github.com/dsluo/bulletin-scraper">https://github.com/dsluo/bulletin-scraper</a>
@@ -122,7 +134,7 @@
                         Built using Python and Scrapy.
                     </li>
                 </ul>
-
+                
                 <div class="align">
                     <h3>wfm.py</h3>
                     <a href="https://github.com/dsluo/wfm.py">https://github.com/dsluo/wfm.py</a>
@@ -137,7 +149,7 @@
                         from the user.
                     </li>
                 </ul>
-
+                
                 <div class="align">
                     <h3>This Resume</h3>
                     <a href="https://dsluo.me/resume/">https://dsluo.me/resume</a>
@@ -156,19 +168,9 @@
             </section>
         </div>
         <div class="right">
-            <section id="academics">
-                <h2>Academics</h2>
-
-                <h3>B.S. in Computer Science</h3>
-                <h4>University of Georgia</h4>
-                <p>
-                    Graduating Fall 2019<br />
-                    GPA: 3.75/4.0 &mdash;Dean's List<br />Zell Miller Scholarship Recipient
-                </p>
-            </section>
             <section id="skills">
                 <h2>Skills</h2>
-
+                
                 <h3>
                     <i class="fas fa-code"></i>
                     Languages
@@ -179,14 +181,14 @@
                 <span class="badge">C++</span>
                 <span class="badge">HTML</span>
                 <span class="badge">CSS</span>
-
+                
                 <h3>
                     <i class="fab fa-linux"></i>
                     Operating Systems
                 </h3>
                 <span class="badge">Linux/Unix</span>
                 <span class="badge">Windows</span>
-
+                
                 <h3>
                     <i class="fas fa-code-branch"></i>
                     Development Tools
@@ -196,7 +198,7 @@
                 <span class="badge">GDB</span>
                 <span class="badge">Regular Expressions</span>
                 <span class="badge">Docker</span>
-
+                
                 <h3>
                     <i class="fas fa-database"></i>
                     Databases
@@ -204,7 +206,7 @@
                 <span class="badge">PostgreSQL</span>
                 <span class="badge">SQLite</span>
                 <span class="badge">MongoDB</span>
-
+                
                 <h3>
                     <i class="fas fa-cloud"></i>
                     Technologies
@@ -233,13 +235,12 @@
                 </ul>
             </section>
         </div>
-        <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aut optio repellendus neque
-            necessitatibus esse cum
-            laboriosam corrupti sint vero soluta obcaecati assumenda, culpa tenetur dicta mollitia ab recusandae
-            ullam.
+        <footer>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi placeat ratione pariatur ex cumque, nam assumenda
+            molestiae, corporis veritatis suscipit dicta iure dignissimos autem? Sint soluta error ratione optio quam.
         </footer>
     </div>
-
+    
 </body>
 
 </html>

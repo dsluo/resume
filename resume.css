@@ -1,8 +1,15 @@
+/* global stuff */
+
 :root {
     --page-width: 8.5in;
     --page-height: 11in;
     --page-margin: 0.25in;
-    --content-width: calc(var(--page-width) - 2 * var(--page-margin))
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 12pt;
+    margin: var(--page-margin);
 }
 
 h1,
@@ -10,9 +17,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul {
     margin-top: 0;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.33em;
 }
 
 h1 {
@@ -31,105 +40,10 @@ a {
     text-decoration-style: underline;
 }
 
-@media print {
-    a {
-        text-decoration-style: none;
-    }
-}
+/* elements */
 
-p,
-ul {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-}
-
-ul {
-    padding-left: 1.5em;
-}
-
-i[class^="fa"] {
-    margin-right: 0.2em;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 12pt;
-}
-
-.center-page {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: calc(var(--page-height) * -1/2);
-    margin-left: calc(var(--page-width) * -1/2);
-}
-
-.page {
-    margin: 2em auto 2em auto;
-    max-width: var(--page-width);
-    min-height: var(--page-height);
-    display: grid;
-    grid-template-columns: 67% 33%;
-    grid-template-rows: min-content min-content auto;
-    grid-template-areas: "header header""left right""footer footer";
-}
-
-.page>* {
-    margin: 0.5em;
-}
-
-.card {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    padding: var(--page-margin);
-}
-
-@media (max-width: 8.5in) {
-    body {
-        margin: 1em;
-    }
-
-    .page {
-        margin: unset;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "header""left""right""footer";
-    }
-
-    .info-tag {
-        flex-basis: 33.3333%;
-    }
-
-    .card {
-        box-shadow: unset;
-        padding: unset;
-    }
-}
-
-header {
-    grid-area: header;
-}
-
-.left {
-    grid-area: left;
-}
-
-.right {
-    grid-area: right;
-}
-
-footer {
-    grid-area: footer;
-}
-
-#contact-info {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-}
-
-.info-tag {
+.nobreak {
     display: inline-block;
-    flex-basis: content;
 }
 
 .badge {
@@ -140,9 +54,147 @@ footer {
     margin-bottom: 4px;
 }
 
-.align {
+/* contact layout */
+
+#contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "mail phone location"
+        "website linkedin github";
+}
+
+#mail {
+    grid-area: mail;
+}
+
+#phone {
+    grid-area: phone;
+}
+
+#location {
+    grid-area: location;
+}
+
+#website {
+    grid-area: website;
+}
+
+#linkedin {
+    grid-area: linkedin;
+}
+
+#github {
+    grid-area: github;
+}
+
+/* job info layout */
+
+#job-info {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 0.25em;
+}
+
+#job-info > span {
+    flex-basis: 50%;
+}
+
+/* page layout */
+
+.page {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--page-width);
+    min-height: var(--page-height);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: max-content max-content auto auto;
+    grid-template-areas:
+        "header header"
+        "left academics"
+        "left right"
+        "footer footer";
+    grid-gap: 0.5em;
+}
+
+.card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: var(--page-margin);
+}
+
+header {
+    grid-area: header;
+}
+
+.left {
+    grid-area: left;
+}
+
+#academics {
+    grid-area: academics;
+}
+
+.right {
+    grid-area: right;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* responsiveness */
+
+/* tablets */
+
+@media (max-width: 768px) {
+
+    /* page layout */
+
+    .page {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "academics"
+            "left"
+            "right"
+            "footer";
+    }
+
+    .card {
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+/* phones */
+
+@media (max-width: 425px) {
+
+    /* job layout */
+
+    #job-info > span {
+        flex-basis: 100%;
+    }
+
+    /* contact layout */
+
+    #contact-info {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "mail website"
+            "phone linkedin"
+            "location github";
+    }
+}
+
+/* print */
+
+@media print {
+    a {
+        text-decoration-style: none;
+    }
 }
