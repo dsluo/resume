@@ -40,6 +40,10 @@ a {
     text-decoration-style: underline;
 }
 
+a:hover {
+    text-decoration-color: #000000;
+}
+
 /* elements */
 
 .nobreak {
