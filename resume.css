@@ -46,7 +46,11 @@ a {
     display: inline-block;
 }
 
-.badge {
+.badge-list {
+    padding-left: 0;
+}
+
+.badge-list > li {
     border: 1px dashed #7c7c7c7c;
     border-radius: 5px;
     padding: 2px;
