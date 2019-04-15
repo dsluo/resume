@@ -1,5 +1,10 @@
 /* global stuff */
 
+@page {
+    size: letter portrait;
+    margin: 0;
+}
+
 :root {
     --page-width: 8.5in;
     --page-height: 11in;
