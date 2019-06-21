@@ -56,14 +56,39 @@ a:hover {
 
 .badge-list {
     padding-left: 0;
+    list-style: none;
 }
 
-.badge-list > li {
-    border: 1px dashed #7c7c7c7c;
+.badge-list > li,
+.badge {
+    border-width: 1px;
     border-radius: 5px;
     padding: 2px;
+    margin-bottom: 2px;
     display: inline-block;
-    margin-bottom: 4px;
+}
+
+.advanced {
+    border-color: #3c3c3c;
+    border-style: solid;
+}
+
+.intermediate {
+    border-color: #7c7c7c;
+    border-style: dashed;
+}
+
+.beginner {
+    border-color: #bcbcbc;
+    border-style: dotted;
+}
+
+#badge-key {
+    font-size: 0.75em;
+}
+
+#badge-key > .badge-list > li {
+    margin-bottom: 2px;
 }
 
 #projects > section > a {
