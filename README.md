@@ -1,5 +1,5 @@
 # Resume
-My resume written in pure HTML and CSS. Find it at https://dsluo.me/resume.
+My resume written in pure HTML and CSS. Find it at https://dsluo.dev/resume.
 
 ## Why?
 Microsoft Word isn't exactly version control friendly, and LaTeX wasn't worth the time investment. 
