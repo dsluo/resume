@@ -17,244 +17,255 @@
 
 <body>
     <div class="page card">
-        <header>
-            <h1>David Luo</h1>
-            <div id="contact-info">
-                <span id="mail" class="nobreak">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:me@dsluo.dev">me@dsluo.dev</a>
-                </span>
-                <span id="phone" class="nobreak">
-                    <i class="fas fa-phone fa-rotate-90"></i>
-                    678-250-8011
-                </span>
-                <span id="location" class="nobreak">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Atlanta, GA
-                </span>
-                <span id="website" class="nobreak">
-                    <i class="fas fa-globe-americas"></i>
-                    <a href="https://dsluo.dev">https://dsluo.dev</a>
-                </span>
-                <span id="linkedin" class="nobreak">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://linkedin.com/in/dsluo">linkedin://dsluo</a>
-                </span>
-                <span id="github" class="nobreak">
-                    <i class="fab fa-github"></i>
-                    <a href="http://github.com/dsluo">github://dsluo</a>
-                </span>
+        <div id="content">
+            <header>
+                <h1>David Luo</h1>
+                <div id="contact-info">
+                    <span id="mail" class="nobreak">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:me@dsluo.dev">me@dsluo.dev</a>
+                    </span>
+                    <span id="phone" class="nobreak">
+                        <i class="fas fa-phone fa-rotate-90"></i>
+                        678-250-8011
+                    </span>
+                    <span id="location" class="nobreak">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Atlanta, GA
+                    </span>
+                    <span id="website" class="nobreak">
+                        <i class="fas fa-globe-americas"></i>
+                        <a href="https://dsluo.dev">https://dsluo.dev</a>
+                    </span>
+                    <span id="linkedin" class="nobreak">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/dsluo">linkedin://dsluo</a>
+                    </span>
+                    <span id="github" class="nobreak">
+                        <i class="fab fa-github"></i>
+                        <a href="http://github.com/dsluo">github://dsluo</a>
+                    </span>
+                </div>
+            </header>
+
+            <div class="left">
+                <section id="academics">
+                    <h2>Academics</h2>
+
+                    <div class="justify-between">
+                        <h3>B.S. in Computer Science</h3>
+                        <h4>University of Georgia</h4>
+                    </div>
+                    <div class="justify-between">
+                        <span>GPA: 3.74/4.0</span>
+                        <span>December 2019</span>
+                    </div>
+                    <p>
+                        Graduated Cum Laude,
+                        Dean's List,
+                        Dean's List,
+                        Dean's List,
+                        Zell Miller Scholarship Recipient
+                    </p>
+                </section>
+
+                <section id="experience">
+                    <h2>Work Experience</h2>
+
+                    <section>
+                        <h3>Software Development Intern</h3>
+                        <h4>Data Automation</h4>
+                        <div id="job-info">
+                            <span class="nobreak">
+                                <i class="far fa-calendar-alt"></i>
+                                Summer 2018&mdash;Present
+                            </span>
+                            <span class="nobreak">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Athens, GA
+                            </span>
+                        </div>
+                        <p>
+                            Designed and implemented a user configurable system in Python which allowed client to
+                            periodically pull
+                            spreadsheet attachments from their inbox, apply spreadsheet operations, and upload to the
+                            client’s analytics software.
+                        </p>
+                        <p>
+                            Worked with sales and project managers to estimate costs of potential projects. Deployed and
+                            QA'd projects
+                            as needed.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Software Development Intern</h3>
+                        <h4>Hunter Liberty Corporation</h4>
+                        <div id="job-info">
+                            <span class="nobreak">
+                                <i class="far fa-calendar-alt"></i>
+                                Summer 2017
+                            </span>
+                            <span class="nobreak">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Acworth, GA
+                            </span>
+                        </div>
+                        <p>
+                            Developed an Android app that communicates with refrigeration controllers over a mobile
+                            device’s
+                            USB port using a USB-to-serial controller with the Modbus-ASCII serial protocol.
+                        </p>
+                    </section>
+                </section>
+
+                <section id="projects">
+                    <h2>Projects</h2>
+
+                    <section>
+                        <h3>SoundBert</h3>
+                        <a href="https://github.com/dsluo/SoundBert">https://github.com/dsluo/SoundBert</a>
+                        <ul>
+                            <li>
+                                Chat bot written in Python 3 for the Discord voice and text chat program that plays
+                                sounds
+                                in voice channels on command.
+                            </li>
+                            <li>
+                                Uses the discord.py library to interact with the Discord API, asyncio for concurrency,
+                                and a
+                                PostgreSQL database to store metadata about each sound.
+                            </li>
+                            <li>
+                                Dockerized for ease of deployment and future scalablility.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Polls</h3>
+                        <ul>
+                            <li>Android app that allows users to create polls, groups of polls, and subscribe to groups
+                                of polls.</li>
+                            <li>Used MVVM architecture, Firebase FireAuth for authentication, and Firebase Firestore as
+                                the database.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>This Resume</h3>
+                        <a href="https://dsluo.dev/resume/">https://dsluo.dev/resume</a>
+                        <ul>
+                            <li>
+                                Printable and responsive.
+                            </li>
+                            <li>
+                                Written in pure HTML5 + CSS3.
+                            </li>
+                            <li>
+                                Source available at <a
+                                    href="https://github.com/dsluo/resume/">https://github.com/dsluo/resume</a>.
+                            </li>
+                        </ul>
+                    </section>
+                </section>
             </div>
-        </header>
 
-        <div class="left">
-            <section id="academics">
-                <h2>Academics</h2>
+            <div class="right">
+                <section id="skills">
+                    <h2>Skills</h2>
 
-                <div class="justify-between">
-                    <h3>B.S. in Computer Science</h3>
-                    <h4>University of Georgia</h4>
-                </div>
-                <div class="justify-between">
-                    <span>GPA: 3.74/4.0</span>
-                    <span>December 2019</span>
-                </div>
-                <p>
-                    Graduated Cum Laude,
-                    Dean's List, 
-                    Zell Miller Scholarship Recipient
-                </p>
-            </section>
+                    <section id="badge-key">
+                        Key:&nbsp;
+                        <ul class="badge-list nobreak">
+                            <li class="advanced">Advanced</li>
+                            <li class="intermediate">Intermediate</li>
+                            <li class="beginner">Beginner</li>
+                        </ul>
+                    </section>
 
-            <section id="experience">
-                <h2>Work Experience</h2>
+                    <section>
+                        <h3>
+                            <i class="fas fa-code"></i>
+                            Languages
+                        </h3>
+                        <ul class="badge-list">
+                            <li class="advanced">Python</li>
+                            <li class="intermediate">Java</li>
+                            <li class="intermediate">C</li>
+                            <li class="intermediate">C++</li>
+                            <li class="beginner">SQL</li>
+                            <li class="intermediate">HTML</li>
+                            <li class="intermediate">CSS</li>
+                            <li class="beginner">Javascript</li>
+                            <li class="beginner">Kotlin</li>
+                        </ul>
+                    </section>
 
-                <section>
-                    <h3>Software Development Intern</h3>
-                    <h4>Data Automation</h4>
-                    <div id="job-info">
-                        <span class="nobreak">
-                            <i class="far fa-calendar-alt"></i>
-                            Summer 2018&mdash;Present
-                        </span>
-                        <span class="nobreak">
-                            <i class="fas fa-map-marker-alt"></i>
-                            Athens, GA
-                        </span>
-                    </div>
-                    <p>
-                        Designed and implemented a user configurable system in Python which allowed client to periodically pull
-                        spreadsheet attachments from their inbox, apply spreadsheet operations, and upload to the
-                        client’s analytics software.
-                    </p>
-                    <p>
-                        Worked with sales and project managers to estimate costs of potential projects. Deployed and QA'd projects
-                        as needed.
-                    </p>
+                    <section>
+                        <h3>
+                            <i class="fab fa-linux"></i>
+                            Operating Systems and Platforms
+                        </h3>
+                        <ul class="badge-list">
+                            <li class="advanced">Linux</li>
+                            <li class="intermediate">Windows</li>
+                            <li class="intermediate">Web</li>
+                            <li class="beginner">Android</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>
+                            <i class="fas fa-code-branch"></i>
+                            Development Tools
+                        </h3>
+                        <ul class="badge-list">
+                            <li class="intermediate">Git</li>
+                            <li class="intermediate">Django</li>
+                            <li class="intermediate">Regular Expressions</li>
+                            <li class="intermediate">REST APIs</li>
+                            <li class="beginner">AWS</li>
+                            <li class="beginner">Docker</li>
+                            <li class="beginner">React.js</li>
+                            <li class="intermediate">Relational Databases</li>
+                            <li class="beginner">Non-relational Databases</li>
+                        </ul>
+                    </section>
                 </section>
 
-                <section>
-                    <h3>Software Development Intern</h3>
-                    <h4>Hunter Liberty Corporation</h4>
-                    <div id="job-info">
-                        <span class="nobreak">
-                            <i class="far fa-calendar-alt"></i>
-                            Summer 2017
-                        </span>
-                        <span class="nobreak">
-                            <i class="fas fa-map-marker-alt"></i>
-                            Acworth, GA
-                        </span>
-                    </div>
-                    <p>
-                        Developed an Android app that communicates with refrigeration controllers over a mobile device’s
-                        USB port using a USB-to-serial controller with the Modbus-ASCII serial protocol.
-                    </p>
-                </section>
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-
-                <section>
-                    <h3>SoundBert</h3>
-                    <a href="https://github.com/dsluo/SoundBert">https://github.com/dsluo/SoundBert</a>
+                <section id="coursework">
+                    <h2>Coursework</h2>
                     <ul>
-                        <li>
-                            Chat bot written in Python 3 for the Discord voice and text chat program that plays sounds
-                            in voice channels on command.
-                        </li>
-                        <li>
-                            Uses the discord.py library to interact with the Discord API, asyncio for concurrency, and a
-                            PostgreSQL database to store metadata about each sound.
-                        </li>
-                        <li>
-                            Dockerized for ease of deployment and future scalablility.
-                        </li>
+                        <li>Mobile Software Development</li>
+                        <li>Operating Systems</li>
+                        <li>Human-Computer Interaction</li>
+                        <li>Cloud Computing</li>
+                        <li>Web Programming</li>
+                        <li>Software Engineering</li>
+                        <li>Algorithms</li>
+                        <li>Computer Architecture</li>
+                        <li>Networks</li>
+                        <li>Data Structures</li>
+                        <li>Computational Theory</li>
+                        <li>Discrete Math</li>
+                        <li>Systems Programming</li>
+                        <li>Software Development</li>
                     </ul>
                 </section>
 
-                <section>
-                    <h3>Polls</h3>
+                <section id="hobbies">
+                    <h2>Hobbies</h2>
                     <ul>
-                        <li>Android app that allows users to create polls, groups of polls, and subscribe to groups of polls.</li>
-                        <li>Used MVVM architecture, Firebase FireAuth for authentication, and Firebase Firestore as the database.</li>
+                        <li>Programming</li>
+                        <li>Homelab/Home Data Center</li>
+                        <li>PC Gaming</li>
+                        <li>Hobbyist Electronics</li>
                     </ul>
                 </section>
-
-                <section>
-                    <h3>This Resume</h3>
-                    <a href="https://dsluo.dev/resume/">https://dsluo.dev/resume</a>
-                    <ul>
-                        <li>
-                            Printable and responsive.
-                        </li>
-                        <li>
-                            Written in pure HTML5 + CSS3.
-                        </li>
-                        <li>
-                            Source available at <a href="https://github.com/dsluo/resume/">https://github.com/dsluo/resume</a>.
-                        </li>
-                    </ul>
-                </section>
-            </section>
-        </div>
-
-        <div class="right">
-            <section id="skills">
-                <h2>Skills</h2>
-                
-                <section id="badge-key">
-                    Key:&nbsp;
-                    <ul class="badge-list nobreak">
-                        <li class="advanced">Advanced</li>
-                        <li class="intermediate">Intermediate</li>
-                        <li class="beginner">Beginner</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>
-                        <i class="fas fa-code"></i>
-                        Languages
-                    </h3>
-                    <ul class="badge-list">
-                        <li class="advanced">Python</li>
-                        <li class="intermediate">Java</li>
-                        <li class="intermediate">C</li>
-                        <li class="intermediate">C++</li>
-                        <li class="beginner">SQL</li>
-                        <li class="intermediate">HTML</li>
-                        <li class="intermediate">CSS</li>
-                        <li class="beginner">Javascript</li>
-                        <li class="beginner">Kotlin</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>
-                        <i class="fab fa-linux"></i>
-                        Operating Systems and Platforms
-                    </h3>
-                    <ul class="badge-list">
-                        <li class="advanced">Linux</li>
-                        <li class="intermediate">Windows</li>
-                        <li class="intermediate">Web</li>
-                        <li class="beginner">Android</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>
-                        <i class="fas fa-code-branch"></i>
-                        Development Tools
-                    </h3>
-                    <ul class="badge-list">
-                        <li class="intermediate">Git</li>
-                        <li class="intermediate">Django</li>
-                        <li class="intermediate">Regular Expressions</li>
-                        <li class="intermediate">REST APIs</li>
-                        <li class="beginner">AWS</li>
-                        <li class="beginner">Docker</li>
-                        <li class="beginner">React.js</li>
-                        <li class="intermediate">Relational Databases</li>
-                        <li class="beginner">Non-relational Databases</li>
-                    </ul>
-                </section>
-            </section>
-
-            <section id="coursework">
-                <h2>Coursework</h2>
-                <ul>
-                    <li>Mobile Software Development</li>
-                    <li>Operating Systems</li>
-                    <li>Human-Computer Interaction</li>
-                    <li>Cloud Computing</li>
-                    <li>Web Programming</li>
-                    <li>Software Engineering</li>
-                    <li>Algorithms</li>
-                    <li>Computer Architecture</li>
-                    <li>Networks</li>
-                    <li>Data Structures</li>
-                    <li>Computational Theory</li>
-                    <li>Discrete Math</li>
-                    <li>Systems Programming</li>
-                    <li>Software Development</li>
-                </ul>
-            </section>
-
-            <section id="hobbies">
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>Programming</li>
-                    <li>Homelab/Home Data Center</li>
-                    <li>PC Gaming</li>
-                    <li>Hobbyist Electronics</li>
-                </ul>
-            </section>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
