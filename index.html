@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="resume.css">
 
     <link rel="shortcut icon" type="image/png" href="pfp.png">
@@ -31,7 +33,7 @@
                     </span>
                     <span id="location" class="nobreak">
                         <i class="fas fa-map-marker-alt"></i>
-                        Atlanta, GA
+                        Ann Arbor, MI
                     </span>
                     <span id="website" class="nobreak">
                         <i class="fas fa-globe-americas"></i>
@@ -43,60 +45,110 @@
                     </span>
                     <span id="github" class="nobreak">
                         <i class="fab fa-github"></i>
-                        <a href="http://github.com/dsluo">github://dsluo</a>
+                        <a href="http://github.com/dsluo">github://dsluo</a> &
+                        <a href="https://github.com/dsluo-archive">dsluo-archive</a>
                     </span>
                 </div>
             </header>
 
             <div class="left">
-                <section id="academics">
-                    <h2>Academics</h2>
-
-                    <div class="justify-between">
-                        <h3>B.S. in Computer Science</h3>
-                        <h4>University of Georgia</h4>
-                    </div>
-                    <div class="justify-between">
-                        <span>GPA: 3.74/4.0</span>
-                        <span>December 2019</span>
-                    </div>
-                    <p>
-                        Graduated Cum Laude,
-                        Dean's List,
-                        Zell Miller Scholarship Recipient
-                    </p>
-                </section>
-
                 <section id="experience">
                     <h2>Work Experience</h2>
 
                     <section>
-                        <h3>Software Development Intern</h3>
-                        <h4>Data Automation</h4>
-                        <div id="job-info">
-                            <span class="nobreak">
-                                <i class="far fa-calendar-alt"></i>
-                                July 2018&mdash;May 2020
-                            </span>
-                            <span class="nobreak">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Athens, GA
-                            </span>
+                        <div class="job-info">
+                            <div class="justify-between">
+                                <h3>Software Developer</h3>
+                                <div class="nobreak">
+                                    <small>@</small>
+                                    <h4>Capgemini North America, Inc.</h4>
+                                </div>
+                            </div>
+                            <div class="justify-between">
+                                <span class="nobreak">
+                                    <i class="far fa-calendar-alt"></i>
+                                    August 2020&mdash;Present
+                                </span>
+                                <span class="nobreak">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Remote
+                                </span>
+                            </div>
                         </div>
-                        <p>
-                            Designed and implemented a user configurable system in Python which allowed client to
-                            periodically pull
-                            spreadsheet attachments from their inbox, apply spreadsheet operations, and upload to the
-                            client’s analytics software.
-                        </p>
-                        <p>
-                            Worked with sales and project managers to estimate costs of potential projects. Deployed and
-                            QA'd projects
-                            as needed.
-                        </p>
+
+                        <h4>Asset Management Application</h4>
+                        <ul>
+                            <li>
+                                Developed Django-based application for management of client's primary profit generating
+                                assets.
+                            </li>
+                            <li>
+                                Major role in design and implementation of version control and spreadsheet import/export
+                                 features.
+                            </li>
+                            <li>
+                                Optimized database queries, resulting in orders of magnitude increase in spreadsheet
+                                parsing performance.
+                            </li>
+                            <li>
+                                Performed code reviews, aided in onboarding new developers onto the project, and
+                                provided guidence for less experienced team members.
+                            </li>
+                            <li>
+                                Built CI/CD pipeline to deploy project to 
+                                client's AWS Kubernetes environment.
+                            </li>
+                        </ul>
+
+                        <h4>Rancher Migration</h4>
+                        <ul>
+                            <li>
+                                Assisted in migration of over 150 Kubernetes deployments from RedHat OpenShift to 
+                                Rancher.
+                            </li>
+                            <li>Conducted smoke tests to ensure functionality of migrated deployments.</li>
+                            <li>
+                                Wrote scripts to automatically backup Kubernetes secrets and generate reports on 
+                                migration status for project leadership.
+                            </li>
+                        </ul>
                     </section>
 
                     <section>
+                        <div class="job-info">
+                            <div class="justify-between">
+                                <h3>Software Development Intern</h3>
+                                <div class="nobreak">
+                                    <small>@</small>
+                                    <h4>Data Automation, Inc.</h4>
+                                </div>
+                            </div>
+                            <div class="justify-between">
+                                <span class="nobreak">
+                                    <i class="far fa-calendar-alt"></i>
+                                    July 2018&mdash;May 2020
+                                </span>
+                                <span class="nobreak">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Athens, GA
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>
+                                Designed and implemented a user configurable system in Python which allowed client to
+                                periodically pull spreadsheet attachments from their inbox, apply spreadsheet 
+                                operations, and upload to the client's analytics software.
+                            </li>
+                            <!-- <li>
+                                Worked with sales and project managers to estimate costs of potential projects. Deployed
+                                and QA'd projects as needed.
+                            </li> -->
+                        </ul>
+                    </section>
+
+                    <!-- <section>
                         <h3>Software Development Intern</h3>
                         <h4>Hunter Liberty Corporation</h4>
                         <div id="job-info">
@@ -109,48 +161,41 @@
                                 Acworth, GA
                             </span>
                         </div>
-                        <p>
-                            Developed an Android app that communicates with refrigeration controllers over a mobile
-                            device’s
-                            USB port using a USB-to-serial controller with the Modbus-ASCII serial protocol.
-                        </p>
-                    </section>
+                        <ul> 
+                            <li>
+                                Developed an Android app that communicates with refrigeration controllers over a mobile
+                                device's USB port using a USB-to-serial controller with the Modbus-ASCII serial 
+                                protocol.
+                            </li>
+                        </ul>
+                    </section> -->
                 </section>
 
                 <section id="projects">
                     <h2>Projects</h2>
 
                     <section>
-                        <h3>SoundBert</h3>
-                        <a href="https://github.com/dsluo/SoundBert">https://github.com/dsluo/SoundBert</a>
+                        <div class="justify-between">
+                            <h3>SoundBert</h3>
+                            <a href="https://github.com/dsluo/SoundBert">https://github.com/dsluo/SoundBert</a>
+                        </div>
+
                         <ul>
                             <li>
                                 Chat bot written in Python 3 for the Discord voice and text chat program that plays
-                                sounds
-                                in voice channels on command.
+                                sounds in voice channels on command.
                             </li>
                             <li>
                                 Uses the discord.py library to interact with the Discord API, asyncio for concurrency,
-                                and a
-                                PostgreSQL database to store metadata about each sound.
+                                and a PostgreSQL database to store metadata about each sound.
                             </li>
-                            <li>
+                            <!-- <li>
                                 Dockerized for ease of deployment and future scalablility.
-                            </li>
+                            </li> -->
                         </ul>
                     </section>
 
-                    <section>
-                        <h3>Polls</h3>
-                        <ul>
-                            <li>Android app that allows users to create polls, groups of polls, and subscribe to groups
-                                of polls.</li>
-                            <li>Used MVVM architecture, Firebase FireAuth for authentication, and Firebase Firestore as
-                                the database.</li>
-                        </ul>
-                    </section>
-
-                    <section>
+                    <!-- <section>
                         <h3>This Resume</h3>
                         <a href="https://dsluo.dev/resume/">https://dsluo.dev/resume</a>
                         <ul>
@@ -165,15 +210,77 @@
                                     href="https://github.com/dsluo/resume/">https://github.com/dsluo/resume</a>.
                             </li>
                         </ul>
+                    </section> -->
+                    <section>
+                        <div class="justify-between">
+                            <h3>Jupiter</h3>
+                            <p>Unraid NAS and local network services server</p>
+                        </div>
+                        <ul>
+                            <li>
+                                Hosts general file share, automatic photo backup, automated regular file backup,
+                                network management and dynamic DNS docker containers, and a home automation virtual 
+                                machine.
+                            </li>
+                            <li>
+                                Uses three 10 TB hard drives, with one acting as a parity drive for storage, with two
+                                solid state drives for caching.
+                            </li>
+                            <li>
+                                Occasionally used as a remote gaming machine with a spare graphics card and low-latency
+                                desktop streaming.
+                            </li>
+                        </ul>
                     </section>
                 </section>
             </div>
 
             <div class="right">
+                <section id="academics">
+                    <h2>Academics</h2>
+                    <h3>B.S. in Computer Science</h3>
+                    <h4>University of Georgia</h4>
+
+                    <p>GPA: 3.74/4.0 - December 2019</p>
+                    <p>
+                        Graduated Cum Laude; Dean's List
+                    </p>
+                    <p>
+                        Zell Miller Scholarship Recipient
+                    </p>
+                </section>
+
                 <section id="skills">
                     <h2>Skills</h2>
 
-                    <section id="badge-key">
+                    <p>
+                        <span class="dropcap">I have professionally used</span> a <em>Python</em> / <em>Django</em> + 
+                        <em>MySQL</em> stack, running in <em>Docker</em> containers on <em>AWS EKS</em>. I've also had 
+                        training in <em>Java</em> <em>Spring</em> and have obtained the <em>Certified Kubernetes 
+                        Application Developer (CKAD)</em> certificate.
+                    </p>
+                    <hr />
+                    <p>
+                        <span class="dropcap">I've taken classes</span> using <em>C</em> and <em>C++</em> for Systems
+                        Programming and Operating Systems, as well as <em>Java</em> for <em>Android</em> development.
+                    </p>
+                    <hr />
+                    <p>
+                        <span class="dropcap">In my own projects</span>, I mostly use <em>Python</em> and raw 
+                        <em>SQL</em> queries on <em>PostgreSQL</em>, interacting with <em>REST APIs</em> to create bots
+                        or scrape webpages. Most of my projects are version controlled using <em>Git</em>,
+                        available on my <a href="https://github.com/dsluo/">GitHub profile</a> or my 
+                        <a href="https://github.com/dsluo-archive/">GitHub organization</a> I use for archiving old
+                        projects.
+                    </p>
+                    <hr />
+                    <p>
+                        <span class="dropcap">I've dabbled in</span> <em>Rust</em> and <em>Kotlin</em>, and I'm 
+                        exploring more frontend tech like <em>React</em> and <em>Typescript</em>. I'm sometimes 
+                        writing <em>C</em>/<em>C++</em> for my mechanical keyboards and other Arduino projects.
+                    </p>
+
+                    <!-- <section id="badge-key">
                         Key:&nbsp;
                         <ul class="badge-list nobreak">
                             <li class="advanced">Advanced</li>
@@ -192,7 +299,7 @@
                             <li class="intermediate">Java</li>
                             <li class="intermediate">C</li>
                             <li class="intermediate">C++</li>
-                            <li class="beginner">SQL</li>
+                            <li class="intermediate">SQL</li>
                             <li class="intermediate">HTML</li>
                             <li class="intermediate">CSS</li>
                             <li class="beginner">Javascript</li>
@@ -220,19 +327,20 @@
                         </h3>
                         <ul class="badge-list">
                             <li class="intermediate">Git</li>
-                            <li class="intermediate">Django</li>
+                            <li class="advanced">Django</li>
                             <li class="intermediate">Regular Expressions</li>
                             <li class="intermediate">REST APIs</li>
+                            <li class="intermediate">Docker</li>
+                            <li class="intermediate">Kubernetes</li>
                             <li class="beginner">AWS</li>
-                            <li class="beginner">Docker</li>
                             <li class="beginner">React.js</li>
                             <li class="intermediate">Relational Databases</li>
                             <li class="beginner">Non-relational Databases</li>
                         </ul>
-                    </section>
+                    </section> -->
                 </section>
 
-                <section id="coursework">
+                <!-- <section id="coursework">
                     <h2>Coursework</h2>
                     <ul>
                         <li>Mobile Software Development</li>
@@ -250,15 +358,19 @@
                         <li>Systems Programming</li>
                         <li>Software Development</li>
                     </ul>
-                </section>
+                </section> -->
 
                 <section id="hobbies">
                     <h2>Hobbies</h2>
                     <ul>
+                        <li>CAD & 3D Printing</li>
+                        <li>Mechanical Keyboards</li>
+                        <li>Electronics <small>(as in circuits and PCBs)</small></li>
+                        <li>Photography</li>
+                        <li>Homelab</li>
                         <li>Programming</li>
-                        <li>Homelab/Home Data Center</li>
+                        <li>Computer Hardware</li>
                         <li>PC Gaming</li>
-                        <li>Hobbyist Electronics</li>
                     </ul>
                 </section>
             </div>
