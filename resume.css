@@ -1,14 +1,15 @@
 /* global stuff */
 
-@page {
-    size: letter portrait;
-    margin: 0;
-}
 
 :root {
     --page-width: 8.5in;
     --page-height: 11in;
     --page-margin: 0.3in;
+}
+
+@page {
+    size: var(--page-width) var(--page-height);
+    margin: var(--page-margin);
 }
 
 body {
@@ -247,12 +248,7 @@ header {
 /* print */
 
 @media print {
-    a {
-        text-decoration: none;
-    }
-
-    .card {
-        box-shadow: none;
-        padding: 0;
+    body {
+        margin: 0;
     }
 }
