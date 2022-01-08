@@ -15,9 +15,9 @@ Find me at:
 
 ## Work Experience
 
-### Capgemini North America, Inc. - Software Developer/Consultant
+### Capgemini North America, Inc. — Software Developer/Consultant
 
-August 2020 to Present - Remote
+August 2020 to Present — Remote
 
 #### Asset Managmeent Application
 
@@ -39,7 +39,7 @@ July 2018 to May 2020 — Athens, Georgia
 
 ## Academics
 
-### B.S. in Computer Science - University of Georgia
+### B.S. in Computer Science — University of Georgia
 
 * Graduated December 2019
 * Graduated Cum Laude;
