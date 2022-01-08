@@ -137,7 +137,8 @@ section {
 /* print */
 
 @media print {
-    body {
+    .page,
+    .page:first-of-type {
         margin: 0;
     }
 }
