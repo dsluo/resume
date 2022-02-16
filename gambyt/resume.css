@@ -4,7 +4,7 @@
 :root {
     --page-width: 8.5in;
     --page-height: 11in;
-    --page-margin: 0.5in;
+    --page-margin: 0.3in;
 }
 
 @page {
@@ -18,7 +18,7 @@ body {
     font-size: 10.3pt;
 }
 
-strong, 
+strong,
 em {
     font-style: normal;
     font-weight: 600;
